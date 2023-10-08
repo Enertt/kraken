@@ -1,0 +1,38 @@
+.block {
+	display: flex;
+	width: 100%;
+	border-radius: 33px;
+	background: #272a39;
+	padding: 10px;
+	align-items: center;
+	margin-bottom: 20px;
+	.currencySection {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		border-radius: 47px;
+		background: #31384f;
+		box-shadow: 0px 4px 20px -9px #121938;
+		padding: 10px 14px;
+
+		color: #7781a4;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.amount {
+		color: #fff;
+		font-size: 16px;
+		font-weight: 400;
+		width: 100%;
+		margin-left: 22px;
+	}
+	.svg {
+		display: flex;
+		align-items: center;
+		padding: 12px;
+		border-radius: 50%;
+		background: #31384f;
+		box-shadow: 0px 4px 20px -9px #121938;
+		cursor: pointer;
+	}
+}

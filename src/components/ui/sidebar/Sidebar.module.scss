@@ -1,0 +1,15 @@
+.sidebar {
+  width: var(--navbar-width);
+  background-color: #1e212e;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+

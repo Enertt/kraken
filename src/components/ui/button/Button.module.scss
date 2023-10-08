@@ -1,0 +1,28 @@
+.button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	button {
+		width: 100%;
+		background: #58218c;
+		border-radius: 47px;
+		padding: 16px 0;
+		box-shadow: 0 6px #4f227a;
+		outline: none;
+		border: none;
+		cursor: pointer;
+
+		&:active {
+			background: #42186a;
+			box-shadow: 0 6px #58218c;
+		}
+	}
+	p:first-child {
+		color: #ffefb7;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+}

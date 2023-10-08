@@ -1,0 +1,24 @@
+.title {
+	color: #6b7392;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	@media (max-width: 576px) {
+		text-align: center;
+	}
+}
+.cardList {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 18px;
+	grid-row-gap: 18px;
+	@media (max-width: 1234px) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+	}
+	@media (max-width: 576px) {
+		display: flex;
+		flex-direction: column;
+	}
+}

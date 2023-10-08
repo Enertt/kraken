@@ -1,0 +1,36 @@
+.block {
+	margin-top: 60px;
+	margin-left: 40px;
+	padding-bottom: 34px;
+	display: flex;
+
+	.leftArrow {
+		border-radius: 33px 0px 0px 33px;
+		border-right: 1px solid #383c50;
+		background: #272a39;
+		padding: 16px 25px;
+	}
+	.pages {
+		display: flex;
+		align-items: center;
+		gap: 26px;
+		border-right: 1px solid #1c1f2c;
+		border-left: 1px solid #1c1f2c;
+		background: #272a39;
+		padding: 13px 14px 12px 21px;
+
+		.number {
+			color: #7781a4;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 400;
+			transition: color 0.3s ease-in-out;
+		}
+	}
+	.rightArrow {
+		border-radius: 0px 33px 33px 0px;
+		border-left: 1px solid #383c50;
+		background: #272a39;
+		padding: 16px 25px;
+	}
+}

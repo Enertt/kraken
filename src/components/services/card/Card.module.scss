@@ -1,0 +1,46 @@
+.block {
+  display: flex;
+  position: relative;
+  padding: 15px;
+  background-color: #1e212e;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 18px;
+  width: 100%;
+
+  .ellipse {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-60%);
+    width: 74px;
+    height: 74px;
+    background-color: #5c2095;
+    filter: blur(38px);
+  }
+
+  .img {
+    width: 127px;
+    height: 149px;
+    object-fit: contain;
+  }
+
+  .info {
+    min-width: 128px;
+
+    .title {
+      color: #7781a4;
+      text-align: right;
+      font-size: 33px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      color: #7781a4;
+      text-align: right;
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 25px;
+    }
+  }
+}

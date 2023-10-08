@@ -1,0 +1,59 @@
+.input,
+.textArea,
+.supportInput {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	border-radius: 47px;
+	background: #222635;
+	border: transparent solid 2px;
+	width: 100%;
+	padding: 16px 20px;
+	margin: 5px 0 8px 0;
+	transition:
+					border 0.3s ease,
+					background-color 0.3s ease,
+					color 0.3s ease;
+
+	&:hover {
+		border: 2px solid #31384f;
+	}
+	&:focus {
+		border: 2px solid #31384f;
+		background: #31384f;
+	}
+
+	&::placeholder {
+		color: #7781a4;
+		font-size: 18px;
+		font-weight: 400;
+		transition: color 0.3s ease;
+	}
+	&:hover::placeholder {
+		color: #fff;
+		font-size: 18px;
+		font-weight: 400;
+	}
+}
+
+.errorInput {
+	border: 2px solid #f46a6a;
+	&::placeholder {
+		color: #f46a6a;
+	}
+}
+
+.textArea {
+	height: 400px;
+	@media (max-width: 768px) {
+		height: 230px;
+	}
+
+	&::placeholder {
+		padding: 24px 0px 0px 43px;
+	}
+}
+
+.supportInput::placeholder {
+	padding: 0px 0px 0px 43px;
+}

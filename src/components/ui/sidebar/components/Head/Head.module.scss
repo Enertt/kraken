@@ -1,0 +1,19 @@
+.head {
+	width: 282px;
+	height: 89px;
+	background-image: url('../../assets/background.png');
+	background-size: cover;
+	padding: 14px 16px 0px 23px;
+	display: flex;
+	column-gap: 8px;
+	h1 {
+		color: #7781a4;
+		font-size: 33px;
+		font-weight: 700;
+	}
+	p {
+		color: #363b54;
+		font-size: 14px;
+		font-weight: 400;
+	}
+}

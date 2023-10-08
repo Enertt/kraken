@@ -1,0 +1,40 @@
+.time {
+	margin-top: 24px;
+	margin-left: 20px;
+	margin-bottom: 33px;
+	display: flex;
+	align-items: center;
+	column-gap: 9px;
+	@media (max-width: 575px) {
+		justify-content: center;
+	}
+
+	h2 {
+		color: #fff;
+		font-family: SF Pro Display;
+		font-size: 10px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	p {
+		color: #7781a4;
+		font-family: SF Pro Display;
+		font-size: 10px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}
+@media (max-width: 1024px) {
+	.time {
+		margin-top: unset;
+		margin-bottom: unset;
+		margin-left: unset;
+	}
+}
+@media (max-width: 576px) {
+	.time {
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,84 @@
+.title {
+	color: #363b54;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 45px 0px 20px 15px;
+}
+.tableHead {
+	border-radius: 33px 33px 0px 0px;
+	background: #1e212e;
+	display: flex;
+	width: 100%;
+	padding: 25px 20px 25px 43px;
+	margin-bottom: 4px;
+
+	.one {
+		width: 10%;
+	}
+	.two {
+		width: 14.62%;
+	}
+	.three {
+		width: 11.81%;
+	}
+	.four {
+		width: 23.94%;
+	}
+	.five {
+		width: 34.12%;
+	}
+	.six {
+		width: 6.82%;
+	}
+
+	span {
+		color: #363b54;
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
+.tableRow {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 25px 20px 25px 43px;
+	justify-content: space-between;
+	background: #212432;
+	.one {
+		width: 10%;
+	}
+	.two {
+		width: 14.62%;
+	}
+	.three {
+		width: 11.81%;
+	}
+	.four {
+		width: 23.94%;
+	}
+	.five {
+		width: 34.12%;
+	}
+	.six {
+		width: 6.82%;
+	}
+
+	span {
+		color: #7781a4;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.statusPending,
+	.statusCanceled,
+	.statusConfirm {
+		color: #486fff;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.statusCanceled {
+		color: #ff4848;
+	}
+	.statusConfirm {
+		color: #48ff50;
+	}
+}

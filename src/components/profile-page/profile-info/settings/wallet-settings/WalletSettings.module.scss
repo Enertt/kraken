@@ -1,0 +1,35 @@
+.block {
+	padding-top: 34px;
+	.title {
+		color: #363b54;
+		font-size: 20px;
+		font-weight: 400;
+	}
+	.list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 40px;
+		.transferField {
+			display: flex;
+			flex-direction: column;
+			gap: 6px;
+
+			.field {
+				display: flex;
+				align-items: center;
+				gap: 17px;
+			}
+			.field > div > button {
+				padding: 23px;
+				width: 150%;
+			}
+		}
+		.transferField > label {
+			color: #363b54;
+			font-size: 14px;
+			font-weight: 400;
+			margin-left: 22px;
+		}
+	}
+}

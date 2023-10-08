@@ -1,0 +1,126 @@
+.DocumentationItemWrapper{
+	color: rgb(173, 173, 173);
+	font-size: 20px;
+	width: 80%;
+	background-color: rgb(37, 35, 39);
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.type{
+	font-size: 30px;
+	padding: 10px;
+	background-color: rgb(60, 56, 63);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	margin-bottom: 10px;
+	span{
+		padding: 5px;
+	}
+}
+.type .spanTypeG{
+	padding: 5px;
+	border-radius: 10px;
+	background-color: rgb(14, 170, 0);
+	color: rgb(240, 240, 240);
+}
+.type .spanTypeB{
+	padding: 5px;
+	border-radius: 10px;
+	background-color: rgb(0, 130, 170);
+	color: rgb(240, 240, 240);
+}
+
+.parameters{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(51, 51, 51);
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+
+.requestBody{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(51, 51, 51);
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+
+.example{
+	background-color: rgb(51, 51, 51);
+	padding: 10px;
+	border-radius: 20px;
+	pre{
+		margin-top: 5px;
+		padding: 10px;
+		background-color: rgb(20, 20, 20);
+		border-radius: 10px;
+	}
+}
+
+.responses{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.responses .responsesTitle{
+	border-radius: 20px;
+	font-size: 27px;
+	margin-bottom: 10px;
+}
+.responses .tableTitle{
+	border-radius: 20px;
+	display: flex;
+	width: 100%;
+	background-color: rgb(51, 51, 51);
+	padding: 10px;
+}
+.tableTitle .one{
+	width: 10%;
+}
+.tableTitle .two{
+	width: 90%;
+}
+
+.responses .successfulResponse{
+	border-radius: 20px;
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	background-color: rgb(51, 51, 51);
+	padding: 10px;
+}
+.successfulResponse .one{
+	width: 10%;
+}
+
+.responses .unsuccessfulResponse{
+	border-radius: 20px;
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	background-color: rgb(51, 51, 51);
+	padding: 10px;
+}
+.unsuccessfulResponse .one{
+	width: 10%;
+}
+
+.successfulResponse_description{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}
+.unsuccessfulResponse_description{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}

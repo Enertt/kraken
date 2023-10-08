@@ -1,0 +1,204 @@
+.captcha_img {
+    background-color: #222635;
+    border-radius: 30px;
+    width: 135px;
+    height: 50px;
+    position: absolute;
+    top: 8px;
+    margin-left: 60px;
+    left: 85px;
+    z-index: 1000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.loginForm {
+    margin-bottom: 60px;
+}
+
+.loginForm .loginInput:hover label {
+    color: #4e5775;
+}
+
+.loginForm .loginInput label {
+    color: #343b54;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 40px;
+    transition: color 0.3s ease;
+}
+
+.loginForm .loginInput .labelError {
+    color: #f46a6a;
+    transition: color 0.3s ease;
+}
+
+.loginForm .passwordInput:hover label {
+    color: #4e5775;
+}
+
+.loginForm .passwordInput:hover .forgotPass {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.loginForm .passwordInput label {
+    color: #343b54;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 40px;
+    transition: color 0.3s ease;
+}
+
+.loginForm .passwordInput .forgotPass {
+    position: fixed;
+    top: 59%;
+    right: 13%;
+    color: #3c4772;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.loginForm .passwordInput .forgotPass:hover {
+    color: #fff;
+}
+
+.loginForm .passwordInput .forgotPass button {
+    all: unset;
+}
+
+.loginForm .passwordInput .labelError {
+    color: #f46a6a;
+    transition: color 0.3s ease;
+}
+
+.loginForm .verifyInput {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+ .input {
+    width: 60%;
+    margin-top: 16px;
+}
+
+.captchaNumbers {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    right: 5px;
+    width: 135px;
+    height: 46px;
+
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 100%;
+    color: #3a4674;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    background-color: #1e212e;
+    border-radius: 47px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.captchaBtn {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #868c9c;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+    width: 80%;
+    .captchaBtnRefresh{
+        color: #7B90DE;
+        text-decoration: underline;
+    }
+}
+
+.loginForm .verifyInput .input .captchaBtn button {
+    all: unset;
+    
+}
+
+.loginForm .verifyInput .button {
+    width: 40%;
+    
+}
+
+.loginForm label {
+    color: #343b54;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 40px;
+    transition: color 0.3s ease;
+}
+
+.loginForm .labelError {
+    color: #f46a6a;
+    transition: color 0.3s ease;
+}
+
+.registerButton {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.registerButton button {
+    padding: 15px 90px;
+    color: #7781a4;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 47px 47px 0px 0px;
+    background: #222635;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.registerButton button:hover {
+    color: #fff;
+    background: #31384f;
+}
+
+@media screen and (max-width: 640px) {
+    .captcha_img {
+        background-color: #222635;
+        border-radius: 30px;
+        width: 90px;
+        height: 46px;
+        position: absolute;
+        top: 10px;
+        margin-left: 60px;
+        left: 29px;
+        z-index: 1000;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+
+    }
+}

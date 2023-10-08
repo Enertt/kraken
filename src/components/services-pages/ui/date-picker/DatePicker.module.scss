@@ -1,0 +1,295 @@
+.datePickerContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	.label {
+		color: #363b54;
+		font-size: 14px;
+		font-weight: 400;
+		margin-left: 23px;
+
+		span {
+			color: #dd4646;
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+
+	.dropdown,
+	.dropdownActive {
+		display: flex;
+		align-items: center;
+		position: relative;
+		border-radius: 33px;
+		background: #1e212e;
+		padding: 5px 5px 5px 43px;
+		transition: all 0.2s ease-in-out;
+		@media (max-width: 1024px) {
+			padding: 5px 5px 5px 33px;
+		}
+		@media (max-width: 768px) {
+			padding: 5px 5px 5px 23px;
+		}
+
+		.dropdownToggle,
+		.dropdownToggleActive {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.value {
+				color: #7781a4;
+				font-size: 14px;
+				font-weight: 400;
+			}
+			.buttons {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				.setting,
+				.settingActive {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 11px;
+					border-radius: 28px;
+					background: #2d3348;
+					cursor: pointer;
+					transition: background 0.3s ease-in-out;
+				}
+				.settingActive {
+					background: #a140fd;
+				}
+				.dropdownSetting {
+					width: 100%;
+					position: absolute;
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					top: 100%;
+					left: 0%;
+					border-radius: 0px 0px 33px 33px;
+					border-bottom: 1px solid #181922;
+					background: #1e212e;
+					padding: 15px 12px 15px 12px;
+					@media (max-width: 1536px) {
+						flex-direction: column;
+						gap: 3px;
+						align-items: flex-end;
+					}
+
+					.arrow,
+					.emptyArrow {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						padding: 6px;
+						border-radius: 47px;
+						background: #2b2e3f;
+					}
+					.emptyArrow {
+						padding: 18px;
+					}
+
+					.settingOption {
+						color: #7781a4;
+						font-size: 14px;
+						font-weight: 400;
+					}
+				}
+				.svg,
+				.svgActive {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 16px;
+					border-radius: 28px;
+					background: #2d3348;
+					cursor: pointer;
+					transition: background 0.3s ease-in-out;
+				}
+
+				.svgActive {
+					background: #a140fd;
+				}
+			}
+		}
+
+		.dropdownOptions {
+			position: absolute;
+			width: 100%;
+			top: 115%;
+			right: 0%;
+			z-index: 1;
+			border-radius: 47px;
+			background: #31384f;
+			box-shadow: 0px 4px 20px -9px #121938;
+			padding: 15px 15px 20px 15px;
+			@media (max-width: 1024px) {
+				width: 300px;
+			}
+
+			.subPikers {
+				display: flex;
+				gap: 2px;
+				.yearPicker,
+				.yearPickerOpen {
+					width: 50%;
+					display: flex;
+					position: relative;
+					padding: 19px;
+					gap: 32px;
+					justify-content: end;
+					border-radius: 33px 0px 0px 33px;
+					background: #272a39;
+					cursor: pointer;
+
+					.selectedYear {
+						color: #7781a4;
+						font-size: 14px;
+						font-weight: 400;
+					}
+					.backgroundYearOption {
+						background: #272a39;
+						padding: 0px 10px 12px 10px;
+						margin-top: -6px;
+						position: absolute;
+						border-radius: 0px 0px 8px 8px;
+						width: 100%;
+						top: 100%;
+						left: 0%;
+
+						.yearOptions {
+							height: 170px;
+							overflow: auto;
+							border-radius: 9px;
+							background: #1e212e;
+							padding: 15px 0px 10px 0px;
+
+							.yearOption {
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								justify-content: center;
+								padding: 10px 0px;
+								margin: 0px 4px;
+
+								p {
+									color: #7781a4;
+									font-size: 14px;
+									font-weight: 400;
+								}
+								&:hover {
+									border-radius: 9px;
+									background: #262935;
+								}
+							}
+						}
+					}
+				}
+				.yearPickerOpen {
+					border-radius: 33px 0px 0px 0px;
+					background: #272a39;
+				}
+				.monthPicker,
+				.monthPickerOpen {
+					width: 50%;
+					display: flex;
+					position: relative;
+					padding: 19px;
+					gap: 32px;
+					justify-content: end;
+					border-radius: 0px 33px 33px 0px;
+					background: #272a39;
+					cursor: pointer;
+
+					.selectedMonth {
+						color: #7781a4;
+						font-size: 14px;
+						font-weight: 400;
+					}
+					.backgroundMonthOption {
+						background: #272a39;
+						padding: 0px 10px 12px 10px;
+						margin-top: -6px;
+						border-radius: 0px 0px 8px 8px;
+						position: absolute;
+						width: 100%;
+						top: 100%;
+						left: 0%;
+
+						.monthOptions {
+							height: 170px;
+							overflow: auto;
+							border-radius: 9px;
+							background: #1e212e;
+							padding: 15px 0px 10px 0px;
+
+							.monthOption {
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								justify-content: center;
+								padding: 10px 0px;
+								margin: 0px 4px;
+
+								p {
+									color: #7781a4;
+									font-size: 14px;
+									font-weight: 400;
+								}
+								&:hover {
+									border-radius: 9px;
+									background: #262935;
+								}
+							}
+						}
+					}
+				}
+				.monthPickerOpen {
+					border-radius: 0px 33px 0px 8px;
+					background: #272a39;
+				}
+			}
+			.dayOptions {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 3px;
+				padding: 24px 10px 20px 10px;
+
+				.dayOption {
+					width: 39px;
+					height: 39px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 9px;
+					border: 1px solid #363b54;
+					background: #1e212e;
+					cursor: pointer;
+
+					p {
+						color: #7781a4;
+						text-align: center;
+						font-family: SF Pro Display;
+						font-size: 20px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: normal;
+					}
+
+					&:hover {
+						border: 1px solid var(--style, #a140fd);
+					}
+				}
+			}
+		}
+	}
+	.dropdownActive {
+		border-radius: 33px 33px 0px 0px;
+		background: #31384f;
+	}
+}

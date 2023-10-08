@@ -1,0 +1,15 @@
+.block {
+	display: flex;
+	border-radius: 18px;
+	align-items: center;
+	justify-content: center;
+	background: #1e212e;
+	width: 100%;
+
+	.title {
+		color: #7781a4;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 34px;
+	}
+}

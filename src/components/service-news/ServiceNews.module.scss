@@ -1,0 +1,18 @@
+.block {
+	margin-top: 18px;
+	margin-bottom: 40px;
+	.title {
+		color: #6b7392;
+		font-size: 20px;
+		font-weight: 400;
+		@media (max-width: 576px) {
+			text-align: center;
+		}
+	}
+	.blockList {
+		display: flex;
+		gap: 24px;
+		overflow-x: auto;
+		width: 100%;
+	}
+}

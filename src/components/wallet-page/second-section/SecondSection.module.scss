@@ -1,0 +1,229 @@
+.block {
+	margin-top: 15px;
+	display: flex;
+	position: relative;
+	border-radius: 33px;
+	background: #1e212e;
+	padding: 49px 0px 49px 52px;
+	
+	
+
+	.qrCodeSection {
+		display: flex;
+		position: relative;
+		margin-right: 75px;
+		
+
+		.qrCode {
+			background: #fff;
+			border-radius: 33px;
+			img {
+				padding: 27px;
+			}
+		}
+		.label {
+			position: absolute;
+			top: 0%;
+			transform: translateX(-60%);
+			right: -44%;
+			height: 40px;
+			display: flex;
+			gap: 19px;
+			border-radius: 0px 0px 33px 33px;
+			background: #272a39;
+			rotate: -90deg;
+			align-items: end;
+			padding: 0px 34px 16px 34px;
+			p {
+				color: #7781a4;
+				font-size: 16px;
+				font-weight: 400;
+			}
+		}
+	}
+	.section {
+		width: 65%;
+		.sectionInfo {
+			display: flex;
+			align-items: center;
+			margin-top: -30px;
+			margin-bottom: 20px;
+			
+			@media (max-width: 1536px) {
+				margin-right: 35px;
+			}
+			.first {
+				display: flex;
+				align-items: center;
+				margin-right: 35px;
+				.text {
+					color: #7781a4;
+					font-size: 14px;
+					font-weight: 400;
+					margin-right: 12px;
+				}
+
+				.timer {
+					display: flex;
+					align-items: center;
+					gap: 6px;
+					color: #7781a4;
+					font-size: 16px;
+					font-weight: 500;
+
+					.minuteFirst {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						background: #272a39;
+						width: 37px;
+						height: 37px;
+					}
+					.minuteSecond {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						background: #272a39;
+						width: 37px;
+						height: 37px;
+					}
+					.secondFirst {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						background: #272a39;
+						width: 37px;
+						height: 37px;
+					}
+					.secondSecond {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						background: #272a39;
+						width: 37px;
+						height: 37px;
+					}
+				}
+			}
+			.second {
+				display: flex;
+				align-items: center;
+				
+				.text {
+					color: #7781a4;
+					font-size: 14px;
+					font-weight: 400;
+					margin-right: 12px;
+				}
+				.numbers {
+					display: flex;
+					align-items: center;
+					gap: 6px;
+					color: #7781a4;
+					font-size: 16px;
+					font-weight: 500;
+
+					.firstt {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						background: #272a39;
+						width: 37px;
+						height: 37px;
+					}
+					.second {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						background: #272a39;
+						width: 37px;
+						height: 37px;
+					}
+					.third {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						background: #272a39;
+						width: 37px;
+						height: 37px;
+					}
+					.fourth {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						background: #272a39;
+						width: 37px;
+						height: 37px;
+					}
+				}
+			}
+		}
+		.fields {
+			width: 100%;
+
+			.label {
+				margin: 0px 0px 5px 25px;
+				color: #363b54;
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+	}
+	.infoSection {
+		border: white solid 1px;
+
+		position: absolute;
+		bottom: 0%;
+		right: 0%;
+		width: 46%;
+		padding: 12px 30px;
+		display: flex;
+		align-items: center;
+		gap: 11px;
+		border-radius: 33px 33.5px 0px 0px;
+		background: #272a39;
+		@media (max-width: 1536px) {
+			right: 20%;
+		}
+
+		.text {
+			color: #7781a4;
+			font-size: 12px;
+			font-weight: 400;
+		}
+	}
+	.help {
+		position: absolute;
+		bottom: 0%;
+		right: 0%;
+		padding: 12px 30px;
+		width: 16%;
+		display: flex;
+		align-items: center;
+		gap: 11px;
+		border-radius: 33px 0px;
+		background: #272a39;
+
+		.text {
+			color: #7781a4;
+			font-size: 12px;
+			font-weight: 400;
+		}
+	}
+	.close {
+		border-radius: 0px 33px;
+		background: #272a39;
+		padding: 18px 14px 20px 17px;
+		position: absolute;
+		top: 0%;
+		right: 0%;
+	}
+}

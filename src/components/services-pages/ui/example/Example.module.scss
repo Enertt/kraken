@@ -1,0 +1,50 @@
+.block {
+	display: flex;
+	align-items: center;
+	border-radius: 0px 0px 33px 33px;
+	background: #3a6267;
+	@media (max-width: 430px) {
+		flex-direction: column;
+		align-items: center;
+		justify-self: center;
+		gap: 12px;
+	}
+
+	.title {
+		color: #fff;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 25px 15px 25px 43px;
+		@media (max-width: 430px) {
+			text-align: center;
+			padding: 10px 0px 0px 0px;
+		}
+	}
+	.stroke {
+		display: flex;
+		gap: 3.5px;
+		@media (max-width: 1024px) {
+			flex-wrap: wrap;
+			gap: 7px;
+		}
+		@media (max-width: 430px) {
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 7px;
+			margin: 13px 11px 12px 11px;
+		}
+		.exampleText {
+			color: #4cb2bf;
+			font-size: 16px;
+			font-weight: 400;
+			border-radius: 6px;
+			background: #264b50;
+			padding: 2px 18px;
+		}
+		.divide {
+			color: #fff;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
+}

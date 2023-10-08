@@ -1,0 +1,142 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	.name {
+		color: #363b54;
+		font-size: 14px;
+		font-weight: 400;
+		margin-left: 22px;
+
+		span {
+			color: #dd4646;
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+	.block,
+	.blockOpen {
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 16px;
+
+		border-radius: 33px;
+		background: #1e212e;
+		padding: 6px 8px;
+
+		.dropdown,
+		.dropdownOpen {
+			display: flex;
+			align-items: center;
+			gap: 28px;
+			padding: 18px 58px 18px 23px;
+			border-radius: 28px;
+			background: #2d3348;
+			color: #7781a4;
+			font-size: 14px;
+			font-weight: 400;
+			transition: all 0.2s ease-in-out;
+		}
+
+		.dropdownOpen {
+			border-radius: 27px 28px 0px 0px;
+			background: #31384f;
+		}
+
+		.dropdownList {
+			position: absolute;
+			width: 348px;
+			top: 100%;
+			left: 0;
+			padding: 13px 13px 26px 11px;
+			border-radius: 0px 0px 33px 33px;
+			border: 1px solid #181922;
+			background: #1e212e;
+
+			.searchBox {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				gap: 21px;
+				border-radius: 47px;
+				background: #272a39;
+				padding: 14px 21px;
+
+				input {
+					width: 100%;
+					border: none;
+					outline: none;
+					background: transparent;
+					padding: 3px 0px;
+					color: #7781a4;
+					font-size: 14px;
+					font-weight: 400;
+				}
+				input::placeholder {
+					color: #7781a4;
+					font-size: 14px;
+					font-weight: 400;
+				}
+			}
+
+			.options {
+				height: 166px;
+				overflow: auto;
+
+				.option {
+					color: #7781a4;
+					font-size: 14px;
+					font-weight: 400;
+					padding: 13px 20px 13px 18px;
+					border-radius: 9px;
+					transition: background 0.2s ease-in-out;
+					&:hover {
+						background: #272a39;
+					}
+
+					.stroke {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+
+						.leftSide {
+							display: flex;
+							align-items: center;
+							gap: 10px;
+						}
+
+						.svg {
+							width: 24px;
+							height: 24px;
+						}
+					}
+				}
+			}
+		}
+
+		.input {
+			width: 100%;
+			input {
+				width: 100%;
+				padding: 10px 0px;
+				border: none;
+				outline: none;
+				background: transparent;
+				color: #7781a4;
+				font-size: 14px;
+				font-weight: 400;
+			}
+
+			input::placeholder {
+				color: #7781a4;
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+	}
+	.blockOpen {
+		border-radius: 33px 33px 0px 0px;
+	}
+}

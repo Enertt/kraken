@@ -1,0 +1,38 @@
+.block {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	.name {
+		color: #565d81;
+		font-size: 14px;
+		font-weight: 400;
+		margin-left: 23px;
+
+		span {
+			color: #dd4646;
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+	.input {
+		display: flex;
+		align-items: center;
+		background: #1e212e;
+		border-radius: 33px;
+		padding: 25px 43px;
+
+		input {
+			width: 100%;
+			color: #7781a4;
+			font-size: 14px;
+			font-weight: 400;
+			background: transparent;
+			outline: none;
+			border: none;
+		}
+		input::placeholder {
+			color: #7781a4;
+		}
+	}
+}

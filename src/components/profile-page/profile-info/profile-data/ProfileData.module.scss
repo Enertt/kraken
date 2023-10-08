@@ -1,0 +1,91 @@
+.blockBalance,
+.blockInvite,
+.blockEarn {
+	display: flex;
+	background: #2f432e;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 28px 20px 34px;
+
+	.firstSection {
+		display: flex;
+		gap: 37px;
+		align-items: center;
+
+		.title {
+			width: 43%;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 700;
+		}
+	}
+	.amount {
+		color: #67ca62;
+		text-align: right;
+		font-size: 61px;
+		font-weight: 700;
+	}
+}
+
+.blockInvite {
+	background: #433e2e;
+
+	.amount {
+		color: #caa762;
+	}
+}
+
+.blockEarn {
+	background: #312e43;
+
+	.amount {
+		color: #7162ca;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.blockBalance,
+	.blockInvite,
+	.blockEarn {
+		display: flex;
+		flex-direction: column;
+		background: #2f432e;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 28px 20px 34px;
+
+		.firstSection {
+			display: flex;
+			gap: 37px;
+			align-items: center;
+
+			.title {
+				width: 43%;
+				color: #fff;
+				font-size: 16px;
+				font-weight: 700;
+			}
+		}
+		.amount {
+			color: #67ca62;
+			text-align: right;
+			font-size: 61px;
+			font-weight: 700;
+		}
+	}
+	.blockInvite {
+		background: #433e2e;
+	
+		.amount {
+			color: #caa762;
+		}
+	}
+	
+	.blockEarn {
+		background: #312e43;
+	
+		.amount {
+			color: #7162ca;
+		}
+	}
+}

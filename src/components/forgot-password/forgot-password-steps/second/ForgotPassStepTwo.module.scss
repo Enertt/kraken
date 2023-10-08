@@ -1,0 +1,92 @@
+.form {
+	margin-bottom: 60px;
+	.loginInput {
+		&:hover {
+			label {
+				color: #4e5775;
+			}
+		}
+
+		label {
+			color: #343b54;
+			font-size: 14px;
+			font-weight: 400;
+			margin-left: 40px;
+		}
+
+		.labelError {
+			color: #f46a6a;
+		}
+	}
+
+	.emailInput {
+		&:hover {
+			label {
+				color: #4e5775;
+			}
+		}
+
+		label {
+			color: #343b54;
+			font-size: 14px;
+			font-weight: 400;
+			margin-left: 40px;
+		}
+		.labelError {
+			color: #f46a6a;
+		}
+	}
+
+	.verifyInput {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		.input {
+			width: 60%;
+			.captchaNumbers {
+				position: fixed;
+				top: 75.3%;
+				left: 33.7%;
+
+				button {
+					display: flex;
+					align-items: center;
+					width: 135px;
+					height: 47px;
+					color: #3a4674;
+					text-align: center;
+					font-size: 28px;
+					font-weight: 700;
+					background-color: #1e212e;
+					border-radius: 47px;
+					border: none;
+				}
+			}
+
+			.captchaBtn {
+				position: fixed;
+				top: 69.8%;
+				right: 47%;
+				color: #343b54;
+				font-size: 14px;
+				font-weight: 400;
+				margin-left: 40px;
+				button {
+					all: unset;
+				}
+			}
+		}
+		.button {
+			width: 40%;
+		}
+	}
+	label {
+		color: #343b54;
+		font-size: 14px;
+		font-weight: 400;
+		margin-left: 40px;
+	}
+	.labelError {
+		color: #f46a6a;
+	}
+}

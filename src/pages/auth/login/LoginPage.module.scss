@@ -1,0 +1,170 @@
+.loginForm {
+	margin-bottom: 60px;
+	.loginInput {
+		&:hover {
+			label {
+				color: #c9d0e2;
+			}
+		}
+
+		label {
+			color: #868c9c;
+			font-size: 14px;
+			font-weight: 400;
+			margin-left: 40px;
+			transition: color 0.3s ease;
+		}
+
+		.labelError {
+			color: #f46a6a;
+			transition: color 0.3s ease;
+		}
+	}
+
+	.passwordInput {
+		&:hover {
+			label {
+				color: #c9d0e2;
+			}
+			.forgotPass {
+				color: #fff;
+				transition: color 0.3s ease;
+			}
+		}
+
+		label {
+			color: #868c9c;
+			font-size: 14px;
+			font-weight: 400;
+			margin-left: 40px;
+			transition: color 0.3s ease;
+		}
+		.forgotPass {
+			position: fixed;
+			top: 59%;
+			right: 13%;
+			color: #3c4772;
+			text-align: right;
+			font-size: 20px;
+			font-weight: 400;
+			cursor: pointer;
+			&:hover {
+				color: #fff;
+			}
+
+			button {
+				all: unset;
+			}
+		}
+		.labelError {
+			color: #f46a6a;
+			transition: color 0.3s ease;
+		}
+	}
+
+	.verifyInput {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		.input {
+			width: 60%;
+			.captchaNumbers {
+				position: fixed;
+				top: 75.3%;
+				left: 33.7%;
+
+				button {
+					display: flex;
+					align-items: center;
+					width: 135px;
+					height: 47px;
+					color: #3a4674;
+					text-align: center;
+					font-size: 28px;
+					font-weight: 700;
+					background-color: #1e212e;
+					border-radius: 47px;
+					border: none;
+					cursor: pointer;
+					border: white solid 1px;
+				}
+			}
+
+			.captchaBtn {
+				position: fixed;
+				top: 69.8%;
+				right: 47%;
+				color: #343b54;
+				font-size: 14px;
+				font-weight: 400;
+				margin-left: 40px;
+				button {
+					all: unset;
+				}
+
+			}
+		}
+		.button {
+			width: 40%;
+
+		}
+	}
+	label {
+		color: #868c9c;
+		font-size: 14px;
+		font-weight: 400;
+		margin-left: 40px;
+		transition: color 0.3s ease;
+	}
+	.labelError {
+		color: #f46a6a;
+		transition: color 0.3s ease;
+	}
+}
+
+.registerButton {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	button {
+		padding: 15px 90px;
+		color: #7781a4;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 500;
+		text-transform: uppercase;
+		border-radius: 47px 47px 0px 0px;
+		background: #222635;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		transition:
+			background-color 0.3s ease,
+			color 0.3s ease;
+
+		&:hover {
+			color: #fff;
+			background: #31384f;
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.loginForm {
+		.verifyInput {
+
+			.input {
+
+				.captchaNumbers {
+					button {
+					position: relative;
+					left: -14px;
+					font-size: 20px;
+					width: 100px;
+					}
+				}
+			}
+		}
+	}
+}

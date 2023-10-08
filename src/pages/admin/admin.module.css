@@ -1,0 +1,71 @@
+a{
+    text-decoration: none;
+}
+
+.root {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.root h1{
+    margin: 20px;
+    color: rgb(138, 138, 138);
+}
+
+.buttonsWrapper{
+    position: relative;
+    padding-top: 20px;
+    top: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 90%;
+    gap: 20px;
+}
+
+.wrapperRow{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.buttonBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 300px;
+    height: 150px;
+    background-color: #222635;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.buttonBlock:hover{
+    box-shadow: 0 0 10px rgb(77, 77, 77);
+}
+
+.buttonContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 50%;
+    /* border: white solid 1px; */
+}
+
+.buttonContent svg{
+    height: 100%;
+    width: auto;
+    color: rgb(156, 156, 156);
+}
+
+.buttonBlock span{
+    color: rgb(156, 156, 156);
+    font-size: 25px;
+}

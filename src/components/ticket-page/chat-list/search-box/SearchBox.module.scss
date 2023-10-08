@@ -1,0 +1,23 @@
+.block {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	border-radius: 12px;
+	border: 1px solid #2b2e3f;
+	background: #202331;
+	padding: 8px 9px;
+
+	input {
+		border: none;
+		background: none;
+		color: #7781a4;
+		font-size: 14px;
+		font-weight: 400;
+		width: 100%;
+		outline: none;
+	}
+
+	input::placeholder {
+		color: #7781a4;
+	}
+}

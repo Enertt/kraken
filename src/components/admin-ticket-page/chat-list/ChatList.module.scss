@@ -1,0 +1,33 @@
+.block {
+  border-radius: 20px 20px 0px 0px;
+  border: 1px solid #2b2e3f;
+  background: #222635;
+  padding: 9px;
+
+  .chatBoxList {
+    min-width: 250px;
+    max-width: 500px;
+    height: 79vh;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 9px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .chatBoxList::-webkit-scrollbar {
+    width: 19px;
+  }
+
+  .chatBoxList::-webkit-scrollbar-thumb {
+    background: #363b54;
+    border-radius: 22px;
+  }
+
+  .chatBoxList::-webkit-scrollbar-track {
+    background: #222635;
+    border: 1px solid #2b2e3f;
+    border-radius: 22px;
+  }
+}

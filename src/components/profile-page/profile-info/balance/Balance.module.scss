@@ -1,0 +1,17 @@
+.block {
+	display: flex;
+	gap: 9px;
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		color: #fff;
+		font-size: 10px;
+		font-weight: 400;
+	}
+	.balance {
+		color: #498a57;
+		font-size: 10px;
+		font-weight: 400;
+	}
+}

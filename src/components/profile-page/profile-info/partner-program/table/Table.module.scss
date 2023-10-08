@@ -1,0 +1,82 @@
+.block {
+	border-radius: 0px 0px 20px 20px;
+	border: 1px solid #2b2e3f;
+	background: #1e212e;
+
+	.title {
+		color: #6b7392;
+		font-size: 20px;
+		font-weight: 400;
+		margin-left: 22px;
+		margin-top: 15px;
+	}
+
+	.tableHead {
+		border-radius: 33px 33px 0px 0px;
+		display: flex;
+		width: 100%;
+		padding: 25px 20px 25px 43px;
+		margin-bottom: 4px;
+
+		.one {
+			width: 8.77%;
+		}
+		.two {
+			width: 24.35%;
+		}
+		.three {
+			width: 12.93%;
+		}
+		.four {
+			width: 13.21%;
+		}
+		.five {
+			width: 11.65%;
+		}
+		.six {
+			width: 14.62%;
+		}
+		.seven {
+			width: 14.84%;
+		}
+
+		span {
+			color: #6b7392;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
+	.tableRow {
+		display: flex;
+		width: 100%;
+		padding: 25px 20px 25px 43px;
+		justify-content: space-between;
+		background: #212432;
+		.one {
+			width: 8.77%;
+		}
+		.two {
+			width: 24.35%;
+		}
+		.three {
+			width: 12.93%;
+		}
+		.four {
+			width: 13.21%;
+		}
+		.five {
+			width: 11.65%;
+		}
+		.six {
+			width: 14.62%;
+		}
+		.seven {
+			width: 14.84%;
+		}
+		span {
+			color: #7781a4;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
+}

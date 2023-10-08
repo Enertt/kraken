@@ -1,0 +1,52 @@
+.block,
+.activeBlock {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 18px;
+	background: #1e212e;
+	border: 1px solid transparent;
+	transition: border 0.3s ease;
+	cursor: pointer;
+	@media (max-width: 1024px) {
+		margin-top: 20px;
+	}
+	&:hover {
+		border: 1px solid #a140fd;
+		.title {
+			color: #a140fd;
+		}
+	}
+	.img {
+		margin-top: 12px;
+	}
+
+	img {
+		height: 72px;
+		user-select: none;
+	}
+	.title {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		color: #7781a4;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 400;
+		margin: 0px 118px 30px 118px;
+		transition: color 0.3s ease;
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+}
+
+.activeBlock {
+	border: 1px solid #a140fd;
+	.title {
+		color: #a140fd;
+	}
+	.activeImage {
+		margin: -12px 0px 24px 0px;
+	}
+}

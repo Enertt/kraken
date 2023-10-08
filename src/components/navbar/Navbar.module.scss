@@ -1,0 +1,74 @@
+.nav {
+	width: 96%;
+	margin: 20px 10px 0px 10px;
+	display: flex;
+	flex-direction: column;
+	.links {
+		position: absolute;
+		bottom: 24px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		width: 100%;
+		display: flex;
+		gap: 30px;
+		flex-direction: column;
+		align-items: center;
+
+		.rules {
+			width: 50%;
+			color: #363b54;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 400;
+			cursor: pointer;
+			transition: color 0.3s ease-in-out;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+		.policy {
+			color: #363b54;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+}
+.navList {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	width: 100%;
+	padding: 20px 0px 20px 40px;
+	cursor: pointer;
+
+	.link {
+		color: #7781a4;
+		font-size: 16px;
+		font-weight: 400;
+		text-decoration: none;
+	}
+}
+.active {
+	width: 100%;
+	background-image: url('../ui/sidebar/assets/background-mask.png');
+	background-color: #222635;
+	padding: 20px 0px 20px 40px;
+	border-right: 1px solid #a140fd;
+	border-radius: 32px 0px 0px 32px;
+	a {
+		color: #fff;
+	}
+}
+@media (max-width: 576px) {
+	.nav {
+		row-gap: 20px;
+	}
+	.navList {
+		svg {
+			margin-right: 14px;
+		}
+	}
+}

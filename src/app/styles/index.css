@@ -1,0 +1,40 @@
+:root {
+    --navbar-width: 282px;
+    --header-height: 89px;
+}
+
+.fade_in {
+    opacity: 0;
+    animation: fadeInAnimation 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+    width: 19px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #363b54;
+    border-radius: 22px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222635;
+    border: 1px solid #2b2e3f;
+    border-radius: 22px;
+}

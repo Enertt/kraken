@@ -1,0 +1,27 @@
+.form {
+	padding-top: 5px;
+	.newPassInput,
+	.repeatPassInput {
+		&:hover {
+			label {
+				color: #4e5775;
+			}
+		}
+
+		label {
+			color: #343b54;
+			font-size: 14px;
+			font-weight: 400;
+			margin-left: 40px;
+			transition: color 0.3s ease;
+		}
+
+		.labelError {
+			color: #f46a6a;
+			transition: color 0.3s ease;
+		}
+	}
+	.button {
+		margin: 10px 0px 32px 0px;
+	}
+}

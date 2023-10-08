@@ -1,0 +1,19 @@
+.block {
+	display: flex;
+	flex-direction: column;
+	height: 87.5vh;
+	gap: 6px;
+	padding: 10px 10px 0px 10px;
+	border-radius: 20px 20px 0px 0px;
+	border: 1px solid #2b2e3f;
+	background: #1e212e;
+
+	.plank {
+		display: flex;
+		justify-content: center;
+		padding: 20px 40px;
+		border-radius: 12px;
+		border: 1px solid #2b2e3f;
+		background: #202331;
+	}
+}

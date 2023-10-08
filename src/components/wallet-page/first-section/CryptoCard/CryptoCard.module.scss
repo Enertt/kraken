@@ -1,0 +1,21 @@
+.card {
+	border-radius: 33px;
+	background: #1e212e;
+	padding: 20px 20px 16px 20px;
+	width: 100%;
+
+	.image {
+		text-align: center;
+		margin-top: -10px;
+	}
+	.activeImage {
+		text-align: center;
+		margin-top: -5px;
+	}
+
+	.title {
+		color: #7781a4;
+		font-size: 16px;
+		font-weight: 400;
+	}
+}

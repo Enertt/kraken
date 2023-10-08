@@ -1,0 +1,13 @@
+.root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.root h1 {
+    margin: 10px;
+    color: rgb(138, 138, 138);
+}

@@ -1,0 +1,12 @@
+.main {
+	width: 100%;
+
+	.bannerList {
+		display: flex;
+		gap: 24px;
+		@media (max-width: 576px) {
+			width: 100%;
+			flex-direction: column;
+		}
+	}
+}

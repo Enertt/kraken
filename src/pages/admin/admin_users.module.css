@@ -1,0 +1,246 @@
+.root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.root h1 {
+    margin: 10px;
+    color: rgb(138, 138, 138);
+}
+
+.searchingWrapper {
+    display: flex;
+    justify-content: center;
+    color: rgb(141, 151, 160);
+    width: 90%;
+    height: auto;
+
+}
+
+.searchingContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    border-radius: 20px;
+    border: rgb(83, 83, 82) dashed 1px;
+    width: 100%;
+}
+
+/* .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+
+    overflow-y: scroll;
+
+} */
+
+.columnNames {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    top: 10px;
+    gap: 3.6%;
+    color: rgb(132, 133, 134);
+}
+
+
+.one {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 24%;
+    /* border: white solid 1px; */
+}
+
+.two {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 12%;
+    /* border: white solid 1px; */
+}
+
+.three {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 12%;
+    /* border: white solid 1px; */
+}
+
+.banStatus {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 15%;
+    /* border: white solid 1px; */
+}
+
+.four {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 24%;
+    /* border: white solid 1px; */
+}
+
+.five {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 12%;
+    /* border: white solid 1px; */
+}
+
+
+.rowWrapper {
+    background-color: #222635;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    min-height: 70px;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+    /* border: white solid 1px; */
+}
+
+.two {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 10%;
+    /* border: white solid 1px; */
+}
+
+.three {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 10%;
+    /* border: white solid 1px; */
+}
+
+.banStatus {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 12%;
+    /* border: white solid 1px; */
+}
+
+.four {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 50%;
+    width: 20%;
+    /* border: white solid 1px; */
+}
+
+.five {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 10%;
+    gap: 20px;
+    /* border: white solid 1px; */
+}
+
+
+/* .rowWrapper .five button:hover{
+    box-shadow: 0 0 5px rgb(88, 87, 87);
+
+    }
+
+
+} */
+
+.rowWrapper span {
+    color: rgb(138, 138, 138);
+    font-size: 20px;
+
+}
+
+.rowWrapper .five button {
+    color: rgb(138, 138, 138);
+    background-color: #12141b;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.rowWrapper .five button:hover {
+    box-shadow: 0 0 5px rgb(88, 87, 87);
+}
+
+.rowWrapper .four button {
+    color: rgb(138, 138, 138);
+    background-color: #12141b;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s;
+    position: absolute;
+    right: 10%;
+}
+
+.rowWrapper .four button:hover {
+    box-shadow: 0 0 5px rgb(88, 87, 87);
+}
+
+.rowWrapper .four input {
+    box-shadow: inset 0 0 5px black;
+    color: rgb(138, 138, 138);
+    background-color: #191b24;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s;
+    width: 80%;
+    padding-left: 10px;
+    cursor: text;
+}

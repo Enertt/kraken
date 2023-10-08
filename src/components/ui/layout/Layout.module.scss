@@ -1,0 +1,22 @@
+.layer {
+  display: flex;
+  width: 100%;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
+.children {
+  width: calc(100% - var(--navbar-width));
+  margin-left: var(--navbar-width);
+  min-height: calc(100vh - 89px);
+  padding: 24px;
+
+  position: relative;
+
+  @media (max-width: 1024px) {
+    padding: 20px 10px 20px 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+}

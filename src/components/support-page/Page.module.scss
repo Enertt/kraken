@@ -1,0 +1,51 @@
+.block {
+	display: flex;
+	width: 100%;
+	@media (max-width: 768px) {
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-top: -20px;
+	}
+	.form {
+		width: 50%;
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+		.title {
+			color: #7781a4;
+			text-align: center;
+			font-size: 33px;
+			font-weight: 700;
+			margin-top: 60px;
+		}
+		.text {
+			color: #363b54;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 400;
+			width: 61%;
+			display: flex;
+			margin: 0 auto;
+		}
+	}
+	.image {
+		width: 50%;
+		display: flex;
+		position: relative;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 60px;
+
+		img {
+			max-width: 300px;
+		}
+		.ellipse {
+			position: absolute;
+			width: 217px;
+			height: 217px;
+			background-color: #a140fd;
+			filter: blur(162.5px);
+		}
+	}
+}

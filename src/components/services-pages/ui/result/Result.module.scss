@@ -1,0 +1,97 @@
+.title {
+	color: #565d81;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 45px 0px 20px 15px;
+}
+.tableHead {
+	border-radius: 33px 33px 0px 0px;
+	background: #1e212e;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 25px 20px 25px 43px;
+	margin-bottom: 4px;
+	@media (max-width: 1024px) {
+		padding: 25px 20px 25px 23px;
+	}
+
+	.one {
+		width: 8.62%;
+		@media (max-width: 1024px) {
+			width: 13.62%;
+		}
+	}
+	.two {
+		width: 17.52%;
+		@media (max-width: 1024px) {
+			width: 30.52%;
+		}
+	}
+	.three {
+		width: 23.61%;
+	}
+	.four {
+		width: 43.43%;
+		@media (max-width: 1024px) {
+			width: 25.43%;
+		}
+	}
+	.five {
+		width: 6.83%;
+	}
+
+	span {
+		color: #565d81;
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
+.tableRow {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 25px 20px 25px 43px;
+	justify-content: space-between;
+	background: #212432;
+	@media (max-width: 1024px) {
+		padding: 25px 20px 25px 23px;
+	}
+	.one {
+		width: 8.62%;
+	}
+	.two {
+		width: 17.52%;
+	}
+	.three {
+		width: 23.61%;
+	}
+	.four {
+		width: 43.43%;
+		@media (max-width: 1024px) {
+			width: 25.43%;
+		}
+	}
+	.five {
+		width: 6.83%;
+	}
+
+	span {
+		color: #7781a4;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.statusPending,
+	.statusCanceled,
+	.statusConfirm {
+		color: #486fff;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.statusCanceled {
+		color: #ff4848;
+	}
+	.statusConfirm {
+		color: #48ff50;
+	}
+}

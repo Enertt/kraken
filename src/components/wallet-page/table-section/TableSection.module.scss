@@ -1,0 +1,185 @@
+.title {
+	color: #6b7392;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 45px 0px 20px 15px;
+}
+.tableHead {
+	justify-content: space-between;
+
+	border-radius: 33px 33px 0px 0px;
+	background: #1e212e;
+	display: flex;
+	width: 100%;
+	padding: 25px 20px 25px 43px;
+	margin-bottom: 4px;
+
+	.one {
+		width: 8.77%;
+
+	}
+	.two {
+		width: 12.03%;
+	}
+	.three {
+		width: 12.03%;
+	}
+	.four {
+		width: 12.03%;
+	}
+	.five {
+		width: 12.03%;
+	}
+	.six {
+		width: 29.17%;
+	}
+	.seven {
+		width: 6.95%;
+	}
+	.eight {
+		width: 6.95%;
+	}
+
+	span {
+		color: #6b7392;
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
+.tableRow {
+	display: flex;
+	width: 100%;
+	padding: 25px 20px 25px 43px;
+	justify-content: space-between;
+	background: #212432;
+
+	min-height: 69px;
+
+	.one {
+		width: 8.77%;
+		overflow: hidden;
+	}
+	.two {
+		width: 12.03%;
+		overflow: hidden;
+	}
+	.three {
+		width: 12.03%;
+		overflow: hidden;
+		
+	}
+	.four {
+		width: 12.03%;
+		overflow: hidden;
+	}
+	.five {
+		width: 12.03%;
+		overflow: hidden;
+	}
+	.six {
+		width: 29.17%;
+		overflow: hidden;
+	}
+	.seven {
+		padding-left: 5px;
+		width: 6.95%;
+		overflow: hidden;
+	}
+	.eight {
+		padding-left: 5px;
+		width: 6.95%;
+		overflow: hidden;
+
+	}
+	span {
+		color: #7781a4;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.statusPending,
+	.statusCanceled,
+	.statusConfirm {
+		color: #486fff;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.statusCanceled {
+		color: #ff4848;
+	}
+	.statusConfirm {
+		color: #48ff50;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.tableHead{
+		padding: 20px 15px 25px 7px;
+			
+		.one {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 20%;
+			padding: 0;
+		}
+		.two {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 19%;
+			overflow: hidden;
+		}
+		.four {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 15%;
+			overflow: hidden;
+		}
+		.eight {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-left: 5px;
+			width: 18%;
+			overflow: hidden;
+			
+		}
+
+		span {
+			font-size: 12px;
+			
+		}
+	}
+	.tableRow {
+		padding: 20px 7px 25px 7px;
+		
+		.one {
+			width: 20%;
+			padding: 0;
+		}
+		.two {
+			width: 19%;
+			overflow: hidden;
+		}
+		.four {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 15%;
+			overflow: hidden;
+		}
+		.eight {
+			padding-left: 5px;
+			width: 18%;
+			overflow: hidden;
+			
+		}
+
+		span {
+
+			font-size: 12px;
+
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.section {
+	width: 20%;
+	padding: 24px 10px 0px 10px;
+	border-radius: 20px 0px 0px 20px;
+	border: 1px solid #2b2e3f;
+	background: #222635;
+
+	.title {
+		color: #2c3041;
+		text-align: center;
+		font-size: 33px;
+		font-weight: 700;
+	}
+	.list {
+		.option {
+			color: #7781a4;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 500;
+			padding: 18px 0px;
+			transition: color 0.3s ease-in-out;
+
+			&:hover {
+				color: #fff;
+				cursor: pointer;
+			}
+		}
+	}
+}

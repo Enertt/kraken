@@ -1,0 +1,24 @@
+.form {
+	padding-top: 40px;
+	.verifyInput {
+		margin: 30px 0px 15px 0px;
+		&:hover {
+			label {
+				color: #4e5775;
+			}
+		}
+
+		label {
+			color: #343b54;
+			font-size: 14px;
+			font-weight: 400;
+			margin-left: 40px;
+			transition: color 0.3s ease;
+		}
+
+		.labelError {
+			color: #f46a6a;
+			transition: color 0.3s ease;
+		}
+	}
+}

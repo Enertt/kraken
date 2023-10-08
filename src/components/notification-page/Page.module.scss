@@ -1,0 +1,51 @@
+.notificationList {
+	display: flex;
+	flex-direction: column;
+	gap: 11px;
+}
+
+.no_data {
+	color: #7781a4;
+}
+
+//.loading_item {
+//	display: flex;
+//	border-radius: 33px;
+//	background: #7781a4;
+//	padding: 0px 18px 0px 12px;
+//	width: 100%;
+//	height: 50px;
+//	opacity: 0.7;
+//	animation: loading 1s infinite;
+//}
+//
+//
+//@keyframes loading {
+//	0%, 100% {
+//		opacity: 0.7;
+//	}
+//	50% {
+//		opacity: 0.4;
+//	}
+//}
+
+
+.skeleton {
+	width: 100%;
+	height: 100px; /* Высота заглушки */
+	border-radius: 33px;
+	padding: 0px 18px 0px 12px;
+
+	background: linear-gradient(90deg, #7781a4 25%, #6b7191 50%, #7781a4 75%);
+	background-size: 200% 100%;
+	animation: skeleton-loading 2s infinite; /* Анимация длится 1.5 секунды и повторяется бесконечно */
+}
+
+@keyframes skeleton-loading {
+	0% {
+		background-position: -200% 0;
+	}
+	100% {
+		background-position: 200% 0;
+	}
+}

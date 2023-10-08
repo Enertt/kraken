@@ -1,0 +1,51 @@
+.root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 40%;
+    height: 30%;
+
+    
+}
+
+.content h1{
+    color: rgb(138, 138, 138);
+}
+
+.content input{
+    width: 80%;
+    height: 40px;
+    background-color: rgb(47, 43, 54);
+    box-shadow: inset 0 0 10px black;
+    border: none;
+    border-radius: 20px;
+    color: rgb(138, 138, 138);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content button{
+    background-color: rgb(24, 21, 27);
+    color: rgb(138, 138, 138);
+    padding: 10px;
+    width: 20%;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.content button:hover{
+    box-shadow: 0 0 5px rgb(56, 56, 56);
+}

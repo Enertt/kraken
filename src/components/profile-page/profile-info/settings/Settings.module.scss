@@ -1,0 +1,19 @@
+.block {
+	border-radius: 20px;
+	border: 1px solid #2b2e3f;
+	background: #1e212e;
+	box-shadow: 0px 4px 101px 0px rgba(0, 0, 0, 0.25);
+	padding: 25px 45px 59px 30px;
+	margin-top: 22px;
+
+	.blackLine {
+		margin: 0px -45px 0px -30px;
+		height: 1px;
+		background: #141621;
+	}
+	.liteLine {
+		margin: 0px -45px 0px -30px;
+		height: 1px;
+		background: #30354b;
+	}
+}

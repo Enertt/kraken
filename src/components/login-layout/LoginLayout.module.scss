@@ -1,0 +1,228 @@
+@import '../../app/styles/_variables';
+.wrapper {
+	position: relative;
+
+	.block {
+		display: flex;
+		flex-direction: column;
+		background-color: #1e212e;
+		border: #2b2e3f solid 1px;
+		border-radius: 50px;
+		width: 605px;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+
+
+		.back {
+			position: fixed;
+			display: flex;
+			top: 0%;
+			left: 4%;
+			z-index: 6;
+
+			.disableButton,
+			.activeButton {
+				background-color: #2a2e41;
+				padding: 22px 34px;
+				outline: none;
+				border-radius: 22px;
+				border: none;
+				border-bottom: 1px solid #2b2e3f;
+				cursor: pointer;
+				transition:
+					background-color 0.3s,
+					padding 0.3s,
+					border-bottom 0.3s;
+
+				&:focus {
+					background-color: #2b2e3f;
+					border-bottom: 1px solid #31384f;
+				}
+			}
+
+			.activeButton {
+				background-color: #31384f;
+			}
+		}
+
+		.imgVector {
+			position: absolute;
+			top: 13%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+
+		}
+
+		.heading {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: relative;
+			z-index: 5;
+			margin-top: -100px;
+
+			.imgLogo {
+				margin-bottom: 20px;
+			}
+
+			.title {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 20px;
+				p:first-of-type {
+					color: #d4daef;
+					text-align: center;
+					font-size: 27px;
+					font-weight: 700;
+				}
+				p:last-of-type {
+					color: $secondary-text-color;
+					text-align: center;
+					font-size: 14px;
+					font-weight: 400;
+				}
+			}
+			.bgTentacles {
+				.smallTentacle {
+					position: absolute;
+					top: 26%;
+					left: -8.9%;
+					width: 70px;
+				}
+				.smallTentacleReverse {
+					position: fixed;
+					transform: rotate(180deg);
+					top: 68%;
+					right: -12.7%;
+				}
+				.bigTentacle {
+					position: fixed;
+					top: 51%;
+					left: -22.4%;
+					width: 175px;
+				}
+				.bigTentacleReverse {
+					position: fixed;
+					transform: scaleX(-1);
+					top: 7%;
+					right: -22.4%;
+					width: 175px;
+				}
+			}
+		}
+
+		.formShadow {
+			position: fixed;
+			top: 108%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 755px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: #15171f;
+		}
+	}
+}
+
+.ellipseOne {
+	position: fixed;
+	top: 30%;
+	left: 29%;
+	width: 45px;
+	height: 45px;
+	background-color: #431d67;
+	filter: blur(18px);
+	z-index: -2;
+}
+
+.ellipseTwo {
+	position: fixed;
+	top: 63%;
+	left: 29%;
+	width: 125px;
+	height: 125px;
+	background-color: #431d67;
+	filter: blur(69.5px);
+	z-index: -1;
+
+}
+
+.ellipseTree {
+	position: fixed;
+	top: 33%;
+	right: 27%;
+	width: 125px;
+	height: 125px;
+	background-color: #431d67;
+	filter: blur(69.5px);
+	z-index: -1;
+}
+
+.ellipseFour {
+	position: fixed;
+	top: 63%;
+	right: 29%;
+	width: 45px;
+	height: 45px;
+	background-color: #431d67;
+	filter: blur(12.5px);
+	z-index: -1;
+
+}
+
+@media screen and (max-width: 640px) {
+	.wrapper{
+		.block{
+			width: 400px;
+
+			.imgVector {
+				position: absolute;
+				top: -10%;
+				left: -17.5%;
+				transform: translate(0, 0);
+				transform: scale(0.66);
+				z-index: -1;
+				width: 400px;
+
+
+			}
+			.heading{
+				.bgTentacles {
+					.smallTentacle {
+						position: absolute;
+						top: 26%;
+						left: -13.9%;
+						width: 70px;
+					}
+					.smallTentacleReverse {
+						position: fixed;
+						transform: rotate(180deg);
+						top: 68%;
+						right: -19.7%;
+					}
+					.bigTentacle {
+						position: fixed;
+						top: 51%;
+						left: -34%;
+						width: 175px;
+					}
+					.bigTentacleReverse {
+						position: fixed;
+						transform: scaleX(-1);
+						top: 7%;
+						right: -34%;
+						width: 175px;
+					}
+				}
+			}
+		}
+
+
+	}
+
+  }

@@ -1,0 +1,234 @@
+.block {
+	margin-top: 10px;
+	.header {
+		border-radius: 33px 33px 0px 0px;
+		border-bottom: 1px solid #2a2d3c;
+		background: #383c52;
+		color: #7781a4;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 13px 0px 13px 27px;
+	}
+
+	.section {
+		border-radius: 0px 0px 33px 33px;
+		border-top: 1px solid #484d68;
+		background: #383c52;
+		padding: 10px 15px 13px 15px;
+
+		.range {
+			display: flex;
+			flex-direction: column;
+			gap: 9px;
+
+			.rangeBlocks {
+				display: flex;
+				gap: 9px;
+				.rangeBlock {
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					gap: 9px;
+					border-radius: 13px;
+					background: #434863;
+					padding: 16px 0px 15px 30px;
+
+					.rangeTitle {
+						color: #7781a4;
+						font-size: 12px;
+						font-weight: 400;
+					}
+					.rangeAmount {
+						color: #fff;
+						font-size: 16px;
+						font-weight: 400;
+					}
+				}
+			}
+			.inputBox {
+				position: relative;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				border-radius: 10px;
+				background: linear-gradient(0deg, #434863 0%, #434863 100%), #272a39;
+				padding: 20px 0px;
+
+				.bar {
+					position: absolute;
+					z-index: 1;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 80%;
+					height: 14px;
+					border-radius: 29px;
+					background: #363b54;
+					overflow: hidden;
+
+					.fill {
+						display: block;
+						width: 50%;
+						height: 100%;
+						background-color: #501e8e75;
+					}
+				}
+
+				.slider {
+					width: 80%;
+					position: relative;
+					z-index: 2;
+					height: 14px;
+					border-radius: 29px;
+					outline: none;
+					border: none;
+					-webkit-appearance: none;
+					background-color: transparent;
+				}
+
+				.slider::-webkit-slider-thumb {
+					width: 44px;
+					height: 22px;
+					border-radius: 11px;
+					border-right: 2px solid #c282ff;
+					background: #7038a6;
+					cursor: pointer;
+					-webkit-appearance: none;
+				}
+
+				.slider::-moz-range-thumb {
+					height: 22px;
+					width: 44px;
+					border-radius: 11px;
+					border-right: 2px solid #c282ff;
+					cursor: pointer;
+					-webkit-appearance: none;
+				}
+			}
+		}
+
+		.method {
+			.title {
+				color: #7781a4;
+				font-size: 16px;
+				font-weight: 400;
+				margin: 15px 0px 8px 18px;
+			}
+		}
+		.methodList {
+			display: flex;
+			gap: 9px;
+
+			.methodBlock,
+			.methodBlockDisable {
+				width: 100%;
+				display: flex;
+				position: relative;
+				flex-direction: column;
+				gap: 12px;
+				border-radius: 13px;
+				background: #646b93;
+				padding: 11px 0px 17px 15px;
+				cursor: pointer;
+
+				.methodTitle {
+					color: #fff;
+					text-align: left;
+					font-size: 12px;
+					font-weight: 400;
+				}
+				.exchange {
+					color: #fff;
+					text-align: left;
+					font-size: 16px;
+					font-weight: 400;
+				}
+				.active {
+					position: absolute;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 3px;
+					top: 6%;
+					right: 3%;
+					border-radius: 50%;
+					background: #2b2e3f;
+				}
+				.noneActive {
+					position: absolute;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 11px;
+					top: 6%;
+					right: 3%;
+					border-radius: 47px;
+					background: #2b2e3f;
+				}
+			}
+			.methodBlockDisable {
+				background: #434863;
+				.methodTitle {
+					color: #7781a4;
+				}
+			}
+		}
+		.buttons {
+			display: flex;
+			width: 100%;
+			gap: 9px;
+			margin-top: 15px;
+			.createButton,
+			.cancelButton {
+				width: 60%;
+
+				button {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+					color: #7781a4;
+					text-align: center;
+					font-size: 16px;
+					font-weight: 400;
+					border-radius: 22px;
+					background: #434863;
+					padding: 13px 0px;
+					outline: none;
+					border: none;
+					cursor: pointer;
+					transition:
+						background 0.3s ease-in-out,
+						color 0.3s ease-in-out;
+
+					&:hover {
+						color: #fff;
+						background: #58218c;
+					}
+				}
+			}
+			.cancelButton {
+				width: 40%;
+
+				button {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+					border-radius: 33px;
+					background: #272a39;
+					padding: 13px 0px;
+					cursor: pointer;
+					transition:
+						background 0.3s ease-in-out,
+						color 0.3s ease-in-out;
+
+					&:hover {
+						color: #fff;
+						background: rgba(87, 30, 142, 0.46);
+					}
+				}
+			}
+		}
+	}
+}

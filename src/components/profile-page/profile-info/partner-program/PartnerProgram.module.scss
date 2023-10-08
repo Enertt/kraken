@@ -1,0 +1,113 @@
+.block {
+	margin-top: 20px;
+	border-radius: 20px 20px 0px 0px;
+	border: 1px solid #2b2e3f;
+	border-bottom: 1px solid #141621;
+	background: #1e212e;
+	padding: 40px 28px 35px 0px;
+
+	.header {
+		display: flex;
+		width: 100%;
+
+		.img {
+			padding: 0px 37px;
+		}
+
+		.section {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+			.title {
+				width: 100%;
+				border-radius: 33px 33px 0px 0px;
+				border-top: 1px solid #2a2d3c;
+				background: #383c52;
+				color: #7781a4;
+				font-size: 16px;
+				font-weight: 400;
+				padding: 13px 0px 13px 37px;
+			}
+			.sectionTwo {
+				width: 100%;
+				border-radius: 0px 0px 33px 33px;
+				border-top: 1px solid #484d68;
+				background: #383c52;
+				padding: 10px 12px 10px 15px;
+
+				.linkBlock {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					gap: 3px;
+					border-radius: 13px;
+					background: #434863;
+					padding: 7px 20px 11px 17px;
+
+					.linkTitle {
+						color: #7781a4;
+						font-size: 12px;
+						font-weight: 400;
+					}
+					.linkHref {
+						color: #fff;
+						font-size: 16px;
+						font-weight: 400;
+					}
+
+					.svg {
+						cursor: pointer;
+						margin-bottom: -8px;
+					}
+				}
+			}
+			.info {
+				display: flex;
+				align-items: center;
+				.button {
+					width: 30%;
+					margin-top: 9px;
+					margin-left: -2px;
+					button {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 100%;
+						color: #7781a4;
+						text-align: center;
+						font-size: 16px;
+						font-weight: 400;
+						border: none;
+						outline: none;
+						border-radius: 22px;
+						background: #434863;
+						padding: 13px 0px;
+						cursor: pointer;
+						transition:
+							background 0.3s ease-in-out,
+							color 0.3s ease-in-out;
+
+						&:hover {
+							color: #fff;
+							background: #58218c;
+						}
+					}
+				}
+				.infoText {
+					color: #7781a4;
+					font-size: 16px;
+					font-weight: 400;
+					margin-left: 37px;
+					margin-bottom: -8px;
+					span {
+						color: #fff;
+						font-size: 16px;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+}
